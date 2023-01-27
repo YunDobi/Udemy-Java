@@ -1,3 +1,5 @@
+package first;
+
 public class Car {
     private String make = "makes";
     private String color = "White";

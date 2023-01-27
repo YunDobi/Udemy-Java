@@ -1,3 +1,5 @@
+package first;
+
 public class Hello {
     public static void main(String[] args) {
         int myValue = 50;
