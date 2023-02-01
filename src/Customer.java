@@ -3,27 +3,21 @@ public class Customer {
     private double creatLimit;
     private String email;
 
-    public String getName() {
-        return name;
+    public Customer(String name, double creatLimit, String email) {
+        this.name = name;
+        this.creatLimit = creatLimit;
+        this.email = email;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     public double getCreatLimit() {
         return creatLimit;
     }
 
-    public void setCreatLimit(double creatLimit) {
-        this.creatLimit = creatLimit;
-    }
-
     public String getEmail() {
         return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }
