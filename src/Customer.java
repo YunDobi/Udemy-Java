@@ -9,6 +9,14 @@ public class Customer {
         this.email = email;
     }
 
+    public Customer(String name, String email) {
+        this(name, 1000, email);
+    }
+
+    public Customer() {
+        this("Nobody", "nobody@email.com");
+    }
+
     public String getName() {
         return name;
     }
