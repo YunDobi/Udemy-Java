@@ -8,8 +8,11 @@ public class Main {
         int[] returnArray = readIntegers();
         System.out.println(Arrays.toString(returnArray));
 
-        int returnedMin = findMe(returnArray);
-        System.out.println("min = " + returnedMin);
+//        int returnedMin = findMe(returnArray);
+//        System.out.println("min = " + returnedMin);
+
+        reverse(returnArray);
+        System.out.println("final" + Arrays.toString(returnArray));
 
     }
     private static int[] readIntegers() {
@@ -35,5 +38,17 @@ public class Main {
             }
         }
         return min;
+    }
+
+    private static void reverse(int[] array) {
+        int max =  array.length - 1;
+        int halfLength = array.length/ 2;
+
+        for(int i = 0; i < halfLength;i++) {
+            int temp = array[i];
+            array[i] = array[max- i];
+            array[max -i] = temp;
+            System.out.println("--->" + Arrays.toString(array));
+        }
     }
 }
